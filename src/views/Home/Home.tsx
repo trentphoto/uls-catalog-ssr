@@ -1,5 +1,5 @@
 import * as React from 'react'
-import './Home.css'
+import './home2.css'
 import Helmet from 'react-helmet'
 import { connect } from 'react-redux'
 import { ReduxState } from '../../types/redux'
