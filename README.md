@@ -7,4 +7,4 @@ _by Bright Salt Media Labs_
 - Redux
 - Typescript
 
-Visit brightsaltmedia.com for more info.
+Bright Salt Media Labs: visit brightsaltmedia.com for more info.
