@@ -1,0 +1,31 @@
+.Hero {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.Hero .container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.Hero_home {
+  height: 300px;
+}
+.Hero__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(0deg, #434f69 0%, transparent 100%);
+}
+.Hero__h1 {
+  position: absolute;
+  bottom: 20px;
+  left: 1rem;
+  color: white;
+}

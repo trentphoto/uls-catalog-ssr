@@ -1,6 +1,7 @@
 import NotFound from './404'
-import About from './About'
 import Home from './Home'
-import Blog from './Blog'
+import Programs from './Programs'
+import ProgramsTemplate from './ProgramsTemplate'
+import PageTemplate from './PageTemplate'
 
-export { Home, NotFound, About, Blog }
+export { Home, NotFound, Programs, ProgramsTemplate, PageTemplate }

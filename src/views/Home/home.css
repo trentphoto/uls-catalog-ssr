@@ -1,0 +1,18 @@
+.card-columns-custom {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  align-items: flex-start;
+}
+
+@media (min-width: 1049px) {
+  .card-columns-custom {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1300px) {
+  .card-columns-custom {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

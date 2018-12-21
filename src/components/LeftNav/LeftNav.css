@@ -1,0 +1,8 @@
+.l_LeftNav {
+  width: 320px;
+  position: fixed;
+  overflow-y: scroll;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}

@@ -26,19 +26,8 @@ textarea:-webkit-autofill {
   overflow-y: scroll;
 }
 
-.page-wrapper {
-  width: 95%;
-  margin: 0 auto;
-  max-width: 1200px;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-}
-
 .transition-wrapper {
   position: relative;
-  width: 100%;
-  height: calc(100vh - 130px);
 }
 
 .transition-wrapper .page {

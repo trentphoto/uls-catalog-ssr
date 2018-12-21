@@ -1,5 +1,7 @@
-import { PostState } from '../modules/ducks/posts/types'
+import { PageState } from '../modules/ducks/pages/types'
+import { ProgramState } from '../modules/ducks/programs/types'
 
 declare interface ReduxState {
-  posts: PostState
+  pages: PageState
+  programs: ProgramState
 }

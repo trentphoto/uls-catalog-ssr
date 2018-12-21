@@ -18,7 +18,8 @@ import createStore from '../dist/modules/store'
 import App from '../dist/App'
 import manifest from '../build/asset-manifest.json'
 
-import { fetchAllPostsSuccess } from '../dist/modules/ducks/posts/operations'
+import { fetchAllPagesSuccess } from '../dist/modules/ducks/pages/operations'
+import { fetchAllProgramsSuccess } from '../dist/modules/ducks/programs/operations'
 import api from '../dist/modules/api'
 
 // LOADER
@@ -60,8 +61,10 @@ export default (req, res) => {
 
       // ASYNC REDUX ACTIONS CAN GO HERE
 
-      const posts = await api.wp.getAllPosts()
-      store.dispatch(fetchAllPostsSuccess(posts))
+      const pages = await api.apiEndpoints.getAllPages()
+      const programs = await api.apiEndpoints.getAllPrograms()
+      store.dispatch(fetchAllPagesSuccess(pages))
+      store.dispatch(fetchAllProgramsSuccess(programs))
 
       const context = {}
       const modules = []

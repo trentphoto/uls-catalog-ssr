@@ -1,7 +1,7 @@
-import wpApiEndpoints from './wpApi'
+import apiEndpoints from './apiEndpoints'
 
 const api = {
-  wp: wpApiEndpoints
+  apiEndpoints
 }
 
 export default api

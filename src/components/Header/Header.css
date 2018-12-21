@@ -1,0 +1,44 @@
+.Header {
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #434f69;
+  background-image: url('http://public.unitedlutheranseminary.org/catalog-admin/storage/uploads/00000000023.jpg');
+  background-position: center;
+  background-size: cover;
+  color: white;
+  height: 120px;
+  z-index: 200;
+}
+
+header .container {
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Header__logo {
+  max-height: 100%;
+  max-width: 100px;
+}
+
+.Header__title {
+  font-family: 'Cardo', serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 30px 0;
+  text-align: center;
+}
+
+@media (max-width: 1149px) {
+  .Header {
+    height: auto;
+  }
+  .Header .container {
+    flex-direction: column;
+  }
+}

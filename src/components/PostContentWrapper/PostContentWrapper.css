@@ -1,0 +1,43 @@
+.PostContentWrapper {
+  padding: 3rem;
+  font-size: 20px;
+  line-height: 2.4rem;
+  word-break: break-word;
+}
+
+.PostContentWrapper a {
+  text-decoration: none;
+  font-weight: bold;
+  border-bottom: 3px solid #434f69;
+}
+
+@media (hover: hover) {
+  .PostContentWrapper a:hover {
+    border-bottom-width: 4px;
+  }
+}
+
+.PostContentWrapper img {
+  max-width: 100%;
+  height: auto;
+}
+
+.PostContentWrapper h1 {
+  color: #434f69;
+  font-family: 'Lato';
+  font-weight: 700;
+}
+
+.PostContentWrapper h2 {
+  font-size: 40px;
+  font-family: 'Lora';
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 3rem;
+}
+
+.PostContentWrapper h3 {
+  font-family: 'Lato';
+  font-weight: 700;
+  color: #434f69;
+}

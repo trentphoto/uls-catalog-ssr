@@ -2,24 +2,24 @@ import { combineReducers } from 'redux'
 import * as types from './types'
 import * as fromActions from './actions'
 
-const initialState: types.PostState = {
-  allPosts: {
+const initialState: types.PageState = {
+  allPages: {
     error: null,
     loading: true,
     data: []
   }
 }
 
-const allPosts = (
-  state: types.PostState['allPosts'] = initialState.allPosts,
+const allPages = (
+  state: types.PageState['allPages'] = initialState.allPages,
   action: fromActions.Actions
 ) => {
   switch (action.type) {
-    case types.FETCH_ALL_POSTS_REQUEST:
+    case types.FETCH_ALL_PAGES_REQUEST:
       return { error: null, loading: true, data: [] }
-    case types.FETCH_ALL_POSTS_SUCCESS:
-      return { ...state, loading: false, data: action.payload.posts }
-    case types.FETCH_ALL_POSTS_FAIL:
+    case types.FETCH_ALL_PAGES_SUCCESS:
+      return { ...state, loading: false, data: action.payload.pages }
+    case types.FETCH_ALL_PAGES_FAIL:
       return { ...state, loading: false, error: action.payload.error }
     default: {
       return state
@@ -27,4 +27,4 @@ const allPosts = (
   }
 }
 
-export default combineReducers({ allPosts })
+export default combineReducers({ allPages })

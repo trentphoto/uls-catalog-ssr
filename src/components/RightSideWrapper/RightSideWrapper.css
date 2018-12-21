@@ -1,0 +1,9 @@
+.RightSideWrapper {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .RightSideWrapper {
+    padding-left: 320px;
+  }
+}
