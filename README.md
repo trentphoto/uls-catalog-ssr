@@ -6,3 +6,5 @@ _by Bright Salt Media Labs_
 - SSR
 - Redux
 - Typescript
+
+Visit brightsaltmedia.com for more info.
