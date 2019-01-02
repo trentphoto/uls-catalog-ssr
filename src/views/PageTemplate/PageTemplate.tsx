@@ -50,6 +50,8 @@ class PageTemplate extends React.Component<Props> {
       return <NotFound />
     }
 
+    console.log(this.props.page)
+
     return (
       <div className="page">
         <Helmet title={' | ULS Academic Catalog'} />

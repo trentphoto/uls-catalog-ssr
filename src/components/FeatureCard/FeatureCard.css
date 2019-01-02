@@ -49,6 +49,6 @@
   }
 
   .FeatureCard:hover .card-title {
-    transform: translateY(-13px);
+    transform: translateY(-5px);
   }
 }
