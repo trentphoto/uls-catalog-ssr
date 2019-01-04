@@ -39,8 +39,10 @@ class LeftNav extends React.Component<Props, State> {
     const { props } = this
     return (
       <React.Fragment>
-        <div className="l_LeftNav">
-          <nav className={this.state.open ? 'LeftNav LeftNav_open' : 'LeftNav'}>
+        <div
+          className={this.state.open ? 'l_LeftNav l_LeftNav_open' : 'l_LeftNav'}
+        >
+          <nav className={'LeftNav'}>
             <div className="LeftNav__wrapper">
               <ul className="LeftNav__ul">
                 <NavItem to="/" text="Home" onClick={this.close} />
