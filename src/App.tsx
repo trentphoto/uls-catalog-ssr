@@ -16,6 +16,7 @@ import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import { pageIntro, pageOutro } from './utils/animations'
 import RightSideWrapper from './components/RightSideWrapper'
 import ReactGA from 'react-ga'
+import { analyticsID } from './config'
 
 interface Props {
   location: Location
@@ -31,10 +32,13 @@ interface Location {
 
 class App extends React.Component<Props> {
   componentDidMount() {
-    ReactGA.initialize('UA-131236946-1', {
-      // debug: true
-    })
+    ReactGA.initialize(analyticsID)
     ReactGA.pageview(this.props.location.pathname)
+  }
+  componentDidUpdate(prevProps: Props) {
+    if (prevProps.location.pathname !== this.props.location.pathname) {
+      ReactGA.pageview(this.props.location.pathname)
+    }
   }
 
   render() {

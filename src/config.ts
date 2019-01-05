@@ -5,4 +5,6 @@ const imgUrlBase = 'https://public.unitedlutheranseminary.org'
 const defaultImgUrl =
   'https://public.unitedlutheranseminary.org/catalog-admin/storage/uploads/00000000022.jpg'
 
-export { apiBase, siteApiBase, imgUrlBase, defaultImgUrl }
+const analyticsID = 'UA-131236946-1'
+
+export { apiBase, siteApiBase, imgUrlBase, defaultImgUrl, analyticsID }
