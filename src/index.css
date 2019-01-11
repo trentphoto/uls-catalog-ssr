@@ -7,6 +7,12 @@ body {
   --pure-white: #fff;
 }
 
+blockquote {
+  border-left: 10px solid #434f69;
+  padding: 30px;
+  background-color: #f9f9f9;
+}
+
 input:-webkit-autofill,
 textarea:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 30px #212121 inset;
